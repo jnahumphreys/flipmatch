@@ -16,6 +16,9 @@ const dirname =
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   test: {
+    coverage: {
+      include: ["src/**"],
+    },
     projects: [
       {
         extends: true,
