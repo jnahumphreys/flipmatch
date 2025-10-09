@@ -17,6 +17,7 @@
       "nvmVersion": "latest"
     }
   },
+  "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
@@ -35,7 +36,21 @@
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "vitest.explorer"
-      ]
+      ],
+      "mcp": {
+        "servers": {
+          "context7": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+              "-y",
+              "@upstash/context7-mcp",
+              "--api-key",
+              "${localEnv:CONTEXT_7_API_KEY}"
+            ]
+          }
+        }
+      }
     }
   }
 
