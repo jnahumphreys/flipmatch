@@ -7,7 +7,7 @@ function Card() {
 
   return (
     <button
-      className="size-20 cursor-pointer perspective-normal"
+      className="size-20 cursor-pointer perspective-near"
       onClick={handleOnClick}
     >
       <div
