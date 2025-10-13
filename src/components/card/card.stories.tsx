@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { fn } from "storybook/test";
 
 import { Card } from "./card";
 
@@ -9,9 +10,20 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    imagePath: {
+      control: false,
+    },
+  },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: {},
+  args: {
+    onClick: fn(),
+    onLoad: fn(),
+    onTransitionEnd: fn(),
+    flipped: true,
+    label: "Bumble Bee",
+    imagePath: "/images/bumble_bee.png",
+  },
 } satisfies Meta<typeof Card>;
 
 export default meta;
