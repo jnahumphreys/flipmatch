@@ -37,6 +37,9 @@
         "bradlc.vscode-tailwindcss",
         "vitest.explorer"
       ],
+      "settings": {
+        "tailwindCSS.classFunctions": ["clsx"]
+      },
       "mcp": {
         "servers": {
           "context7": {
