@@ -2,7 +2,7 @@ import { Card } from "../card";
 
 function Stage() {
   return (
-    <div className="grid aspect-square w-full max-w-158 grid-cols-5 grid-rows-5 gap-[1.5%]">
+    <div className="grid aspect-square w-full max-w-166 grid-cols-5 grid-rows-5 gap-[2.41%]">
       {[...Array(25)].map((_, i) => (
         <Card
           key={i}
