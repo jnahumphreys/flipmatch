@@ -29,6 +29,12 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const NotFlipped: Story = {
+  args: {
+    flipped: false,
+  },
+};
+
+export const Flipped: Story = {
   args: {},
 };
