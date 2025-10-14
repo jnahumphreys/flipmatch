@@ -19,7 +19,7 @@ function Card({
 }: CardProps) {
   return (
     <button
-      className={`size-30 ${flipped ? `cursor-not-allowed` : `cursor-pointer`} perspective-near`}
+      className={`aspect-square h-full max-h-30 w-full max-w-30 ${flipped ? `cursor-not-allowed` : `cursor-pointer`} perspective-near`}
       onClick={onClick}
       aria-label={label}
       aria-pressed={flipped}
