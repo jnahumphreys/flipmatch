@@ -19,7 +19,7 @@ function Card({
 }: CardProps) {
   return (
     <button
-      className="size-20 cursor-pointer perspective-near"
+      className="size-30 cursor-pointer perspective-near"
       onClick={onClick}
       aria-label={label}
       aria-pressed={flipped}
@@ -31,10 +31,10 @@ function Card({
         className={`relative size-full transform-gpu transition-transform delay-150 duration-300 ease-in-out transform-3d ${flipped && "rotate-y-180"}`}
         onTransitionEnd={onTransitionEnd}
       >
-        <div className="absolute size-full rounded-md bg-blue-500 backface-hidden"></div>
-        <div className="absolute flex size-full rotate-y-180 flex-col content-center justify-center rounded-md bg-red-500 backface-hidden">
+        <div className="absolute size-full rounded-4xl bg-blue-500 backface-hidden"></div>
+        <div className="absolute flex size-full rotate-y-180 flex-col content-center justify-center rounded-4xl bg-red-500 backface-hidden">
           <img
-            className="aspect-auto"
+            className="aspect-auto scale-90"
             src={imagePath}
             srcSet={`${imagePath} 1x, ${imagePath.replace(/(\.[\w\d_-]+)$/i, "@2x$1")} 2x, ${imagePath.replace(/(\.[\w\d_-]+)$/i, "@3x$1")} 3x `}
             alt=""
