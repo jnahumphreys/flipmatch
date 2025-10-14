@@ -56,18 +56,3 @@ function Card({
 }
 
 export { Card };
-
-/*
-box-sizing: border-box;
-
-position: absolute;
-width: 140px;
-height: 140px;
-left: 5px;
-top: 1px;
-
-background: #FEFEFE;
-border: 0.985728px solid #FFFFFF;
-box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
-border-radius: 40px;
-*/
