@@ -19,10 +19,11 @@ function Card({
 }: CardProps) {
   return (
     <button
-      className="size-30 cursor-pointer perspective-near"
+      className={`size-30 ${flipped ? `cursor-not-allowed` : `cursor-pointer`} perspective-near`}
       onClick={onClick}
       aria-label={label}
       aria-pressed={flipped}
+      disabled={flipped}
     >
       <span className="sr-only">
         {flipped ? `Revealed: ${label}` : "Face down"}
