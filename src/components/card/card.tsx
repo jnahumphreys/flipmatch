@@ -22,7 +22,7 @@ function Card({
 
   return (
     <button
-      className={`aspect-square h-full max-h-30 w-full max-w-30 ${flipped ? `cursor-not-allowed` : `cursor-pointer`} perspective-near`}
+      className={`aspect-square h-full max-h-30 w-full max-w-30 ${flipped ? `cursor-not-allowed` : `cursor-pointer`} perspective-near focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dashed`}
       onClick={onClick}
       aria-label={label}
       aria-pressed={flipped}
