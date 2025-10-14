@@ -18,7 +18,7 @@ function Card({
   onTransitionEnd,
 }: CardProps) {
   const sharedCardStyles =
-    "absolute size-full rounded-[30%] backface-hidden bg-[#FEFEFE] border-white border shadow-md";
+    "absolute size-full rounded-[30%] backface-hidden bg-[#FDFDFD] dark:bg-gray-800 border-white dark:border-gray-700/20 border shadow-md";
 
   return (
     <button
