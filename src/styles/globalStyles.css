@@ -5,3 +5,13 @@
 @theme {
   --breakpoint-2xl: initial;
 }
+
+@layer base {
+  html {
+    background: #f5f5f5;
+
+    @variant dark {
+      background: black;
+    }
+  }
+}
